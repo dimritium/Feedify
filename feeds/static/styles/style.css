@@ -1,0 +1,68 @@
+body{
+    /* background-image: url(../media/images/twitter.png); */
+    /* background-color: green; */
+    /* color: white; */
+    /*background: #000046;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: auto;
+    width: auto;
+    padding: 0px;
+    background-size: contain;
+}
+#sign-in{
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+#login{
+    height: 15em;
+    width: 12em;
+    font-size: 1.4em;
+    color: white;
+    position: relative;
+    margin:60px auto 20px auto;
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5662EF, #263EF0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5662EF, #263EF0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+#header{
+    /* background-color: #0288d1; */
+    font-family: 'Baloo Bhaijaan', cursive;
+    color: white;
+    padding: 4px;
+    margin: 0px;
+    align-items: left;
+}
+#icon{
+    position: "relative";
+}
+#bird{
+    margin: .6em auto 0 1em;
+    align-items: center;
+    position: "relative";
+    height: 5em;
+    width: 5em;
+}
+#tag_line{
+    font-size: .9em;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
+#headline{
+    font-size: x-small;
+}
+#heart{
+    font-size: larger;
+}
+a{
+    font-style: none;
+    color: white;
+    font-weight: bolder;
+}

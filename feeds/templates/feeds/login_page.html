@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Welcome to feedify
+{%endblock%}
+
+{%block content%}
+   {%load static%} <link rel="stylesheet" type="text/css" href="{% static 'styles/materialize/css/materialize.css' %}" />
+   {%load static%} <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}" />
+   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+   <div id="header">
+        <h3>feedify <span id="headline">( Tapzo Assignment )</span></h3>
+   </div>
+    <div class="container">
+        <div class = "card-panel" id="login">
+            <p id="sign-in">Sign In with Twitter!</p>
+            <div class="container">
+                    <a href="/login_twitter"><img src="static/media/images/twitter-icon.png" id="bird"></img></a>
+                    <p id="tag_line">Made with <span id="heart">&hearts;</span></br> by </br><a href="https://github.com/shubhiD">dimriXD</a></p>
+            </div>
+        </div>
+    </div>
+{%endblock%}
