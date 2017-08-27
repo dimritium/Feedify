@@ -1,6 +1,6 @@
 settings.*
 .vscode
 tapzo2*
-migrations
+feeds/migrations/*
 *pyc*
 db*
