@@ -25,7 +25,7 @@ def login_page(request):
 
 def login_twitter(request):
     twitter_ = Twython(settings.APP_KEY, settings.APP_SECRET)
-    auth = twitter_.get_authentication_tokens(callback_url='/thanks')
+    auth = twitter_.get_authentication_tokens(callback_url='http://127.0.0.1:8000/thanks')
     file = open('temp_token','w')
     OAUTH_TOKEN = auth['oauth_token']
     OAUTH_TOKEN_SECRET = auth['oauth_token_secret']
@@ -34,7 +34,7 @@ def login_twitter(request):
     file.close()
 
     return redirect(auth['auth_url'])
-    return redirect('/thanks')
+    # return redirect('/thanks')
 
 def thanks(request):
     file = open('temp_token','r')
