@@ -6,7 +6,7 @@
     position: fixed;
 }
 #content{
-    float: left;
+    /* float: left; */
     height: 100%;
     padding: 1em;
     display: inline;
@@ -49,4 +49,42 @@
     font-family: 'Boogaloo', cursive;
     font-size: 1.1em;
     font-weight: bolder;
+}
+#sub_btn{
+    width: 3em;
+    height: 3em;
+    float: right;
+}
+button{
+    background: none;
+    border:  none;  
+    margin: none;
+    padding: none;
+}
+@media (max-width: 768px) {
+    #content{
+        float: left;
+        width: 100%;
+        margin-left:0em;
+    }
+    #nav{
+         visibility: hidden;
+    }
+}
+
+#flt_btn{
+    visibility: visible;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 200;
+}
+.navs{
+    /* position: relative; */
+    visibility: visible !important;
+   display: block;
+   width: 100%;
+   float: left;
+   position: fixed;
+   z-index: 100;
 }

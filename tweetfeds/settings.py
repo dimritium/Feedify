@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'bax#roan(*=g2_576#@!y27u20s36&90^nr=k&ck#fnj59pds9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
+DEBUG =True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'feedify.pythonanywhere.com']
 
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'tweetfeds.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'tapzo2',
         }
 }
 

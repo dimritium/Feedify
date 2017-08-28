@@ -4,42 +4,58 @@
 {%endblock%}
 {%block content%}
     {%load static%} <link rel="stylesheet" type="text/css" href="{% static 'styles/materialize/css/materialize.css' %}" />
+    {%load static%} <link rel="stylesheet" type="text/css" href="{% static 'styles/fontawesome/css/font-awesome.css' %}" />
     {%load static%} <link rel="stylesheet" type="text/css" href="{% static 'styles/style_feeder.css' %}" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+    <script>
+        function myfunction(){
+            var mynav = document.getElementById('nav');
+             if(mynav.getAttribute("class")=="col s3"){
+                mynav.setAttribute("class","navs");
+            }
+            else{
+                mynav.setAttribute("class","col s3");
+            }
+    }
+    </script>
     <div class="row">
+            <a class="btn-floating btn-large waves-effect waves-light blue" id="flt_btn" onclick="myfunction()"><i class="material-icons"><span style="font-size: 2em">=</span></i></a>
         <div class="col s3" id="nav">
             <div class="card-panel blue lighten-2 col s8" id="user_info">
                 <div id="wel_text">Welcome <span style="font-weight:bolder">{{contexts.user}}</span> </br>to</br> <span style="font-weight:bolder">feedify </span> </div>
             </div>
             <div class="card-panel blue lighten-2 col s8" id="form_data">
                     <form action="/feeder/" method="GET">{% csrf_token %}        
-                            <p>Filter tweets by date<input type = 'date'  name='start_date' ></p>
-                            <button type="submit">Submit</button>
+                            <p style="font-weight: bolder">Filter tweets by date</p><input type = 'date'  name='start_date' >
+                            <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true" style="font-size: 1.5em"></i></button>
                         </form>
             </div>
         <div class="card-panel blue lighten-2 col s8" id="info">
-            <p>{{contexts.message}}</p>
             
+            <p>{{contexts.message}}</p>
         </div>
-        </div>
+    </div>
         {% autoescape off %}
         <div class="col s7" id="content">
+               
         {%for k,v in contexts.iteritems%}
         {%if v.text %}
-        <div class='card-panel'>
+        <div class='card-panel' class='tweet-card'>
             <span id="tweet_by">{{v.tweet_by}}</span>
         </br>
            {{v.text}}
            {%for url in v.urls%}
            {%if url%}
-            <a href={{url}} > visit</a>
+            <a href={{url}} target="_blank"> visit</a>
             {%endif%}
             {%endfor%}
         </div>
          {%endif%}       
               {%endfor%}
-        </div>
         {%endautoescape%}
+    </div>
+        <div class="col s2">
+        </div>
     </div>
 {%endblock%}
