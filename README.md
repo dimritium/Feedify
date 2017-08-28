@@ -3,7 +3,7 @@ Twitter feeds logger part of tapzo assignment, purely made in python using djang
 ## Tech used
 1. Django [checkout](https://www.djangoproject.com)
 2. Twython twitter API [checkout](https://twython.readthedocs.io/en/latest/)
-3. MaterializeCSS [visit](http://materializecss.com)
+3. MaterializeCSS [checkout](http://materializecss.com)
 4. FontAwesome [checkout](http://fontawesome.io)
 5. DjangoGirls [checkout](https://tutorial.djangogirls.org/en/)
 6. PythonAnywhere (site hosted on this!) [checkout](www.pythonanywhere.com/)
@@ -15,3 +15,5 @@ Twython library is used for authentication purpose and getting user feeds, mater
 ### Note:
 You won't be able to run this by cloning as:
 1) Settings file is missing (contains important data)
+
+Website [visit](http://feedifyme.pythonanywhere.com)
