@@ -11,9 +11,10 @@ Twitter feeds logger part of tapzo assignment, purely made in python using djang
 All the above mentioned, have helped me in someway or the other in making this project a big thanks to them!
 ## Description
 Twython library is used for authentication purpose and getting user feeds, materializeCSS to materialize the ui (yeah a fan of material guidelines).After the user authenticates this app starts a thread for that user which collects latest feeds after some minutes. This app is still in beta! For bugs or hugs feel free to connect! Thank you.
-**A user must wait for 5 mins for content to load,(in some conditions)** thats the delay in fetching tweets as twitter has limit of 15 request per 15 mins
+**A user must wait for 5 mins for content to update,(in some conditions)** thats the delay in fetching tweets as twitter has limit of 15 request per 15 mins
 ### Note:
-You won't be able to run this by cloning as:
-1) Settings file is missing (contains important data)
+* There was a bug due to which tweets had date of 28 August, I hope further tweets date issue is be fixed 
+* You won't be able to run this by cloning as:
+  * Settings file is missing (contains important data)
 
 Website [visit](http://feedifyme.pythonanywhere.com)
