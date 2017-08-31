@@ -1,5 +1,5 @@
 # Feedify
-Twitter feeds logger part of tapzo assignment, purely made in python using django framework
+Twitter feeds logger, purely made in python using django framework
 ## Tech used
 1. Django [checkout](https://www.djangoproject.com)
 2. Twython twitter API [checkout](https://twython.readthedocs.io/en/latest/)
