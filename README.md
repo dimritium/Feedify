@@ -1,5 +1,6 @@
 # Feedify
 Twitter feeds logger, purely made in python using django framework
+</br><b>It's live<b> [here](http://feedifyme.pythonanywhere.com)
 ## Tech used
 1. Django [checkout](https://www.djangoproject.com)
 2. Twython twitter API [checkout](https://twython.readthedocs.io/en/latest/)
@@ -17,4 +18,4 @@ Twython library is used for authentication purpose and getting user feeds, mater
 * You won't be able to run this by cloning as:
   * Settings file is missing (contains important data)
 
-Website [visit](http://feedifyme.pythonanywhere.com)
+
