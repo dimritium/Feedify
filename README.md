@@ -1,6 +1,6 @@
 # Feedify
 Twitter feeds logger, purely made in python using django framework
-</br><b>It's live<b> [here](http://feedifyme.pythonanywhere.com)
+</br><b>It's live</b> [here](http://feedifyme.pythonanywhere.com)
 ## Tech used
 1. Django [checkout](https://www.djangoproject.com)
 2. Twython twitter API [checkout](https://twython.readthedocs.io/en/latest/)
